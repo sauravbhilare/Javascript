@@ -13,7 +13,7 @@ console.log("Template Literal Message:", message);
 
 // 4. Callback Function
 function ask(question, yes, no) {
-  const userResponse = true; // simulate user input
+  const userResponse = true;
   if (userResponse) yes();
   else no();
 }
@@ -41,7 +41,6 @@ checkTemp(35)
   .then((msg) => console.log("Promise Success:", msg))
   .catch((err) => console.log("Promise Error:", err));
 
-// Bonus: Combine Template Literal + Callback + setTimeout
 function welcomeUser(name, callback) {
   let greet = `Hello ${name}, nice to meet you!`;
   console.log(greet);
